@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Symfony - Accueil
+{% endblock %}
+
+{% block body %}
+<div class= "container">
+<div class="jumbotron mx-2 mt-4">
+  <h1 class="display-4">Bienvenue</h1>
+  <p class="lead">Voici un blog, pour pouvoir créer des blog, il suffit de vous inscrire</p>
+  <hr class="my-4">
+  <p>Cliquez sur le bouton ci dessous pour vous inscrire</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{{ path('app_register') }}" role="button">Inscription</a>
+  </p>
+</div>
+</div>
+    
+{% endblock %}
